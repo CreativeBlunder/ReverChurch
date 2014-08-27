@@ -1,0 +1,78 @@
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
+// Variables
+@header-borders:   #ebebeb;
+@facebook:         #3b5998;
+@twitter:          #55acee;
+@flickr:           #ff0084;
+@rss:              #f26522;
+
+header {
+    background: url(../img/header-bg.png) center repeat;
+    border-bottom: 1px solid @header-borders;
+    .top-links {
+        background: #fff;
+        border-bottom: 1px solid @header-borders;
+        .container {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            text-align: right;
+        }
+        .social-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-left: 7px;
+                a {
+                    background: @gray-lighter;
+                    .border-radius(15px);
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    width: 30px;
+                    &:hover {
+                        &.facebook {
+                            background: @facebook;
+                        }
+                        &.twitter {
+                            background: @twitter;
+                        }
+                        &.flickr {
+                            background: @flickr;
+                        }
+                        &.rss {
+                            background: @rss;
+                        }
+                    }
+
+                    // Sub Elements
+                    .fa {
+                        color: #fff;
+                        font-size: 16px;
+                        position: relative;
+                        top: 1px;
+                        &.fa-circle {
+                            display: inline-block;
+                            font-size: 8px;
+                            margin: 0 1px;
+                            top: -2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    > .container {
+        .logo {
+            float: left;
+            margin-bottom: -20px;
+            max-width: 200px;
+            position: relative;
+            top: -30px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+a {
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+header {
+  background: url(../img/header-bg.png) center repeat;
+  border-bottom: 1px solid #ebebeb;
+}
+header .top-links {
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+header .top-links .container {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: right;
+}
+header .top-links .social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .top-links .social-links li {
+  display: inline-block;
+  margin-left: 7px;
+}
+header .top-links .social-links li a {
+  background: #eeeeee;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
+header .top-links .social-links li a:hover.facebook {
+  background: #3b5998;
+}
+header .top-links .social-links li a:hover.twitter {
+  background: #55acee;
+}
+header .top-links .social-links li a:hover.flickr {
+  background: #ff0084;
+}
+header .top-links .social-links li a:hover.rss {
+  background: #f26522;
+}
+header .top-links .social-links li a .fa {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+}
+header .top-links .social-links li a .fa.fa-circle {
+  display: inline-block;
+  font-size: 8px;
+  margin: 0 1px;
+  top: -2px;
+}
+header > .container .logo {
+  float: left;
+  margin-bottom: -20px;
+  max-width: 200px;
+  position: relative;
+  top: -30px;
+}
