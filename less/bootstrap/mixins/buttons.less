@@ -6,7 +6,7 @@
 .button-variant(@color; @background; @border) {
   color: @color;
   background-color: @background;
-  border-color: @border;
+  .box-shadow(0 2px 0 @border);
 
   &:hover,
   &:focus,
@@ -14,8 +14,8 @@
   &.active,
   .open > .dropdown-toggle& {
     color: @color;
-    background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    // background-color: darken(@background, 10%);
+    //     border-color: darken(@border, 12%);
   }
   &:active,
   &.active,
