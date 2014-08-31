@@ -2,6 +2,7 @@
 @import "../bootstrap/mixins.less";
 @import "variables.less";
 
+// Widgets //
 .widgets {
     .container {
         padding-bottom: (@section-padding * 1.5);
@@ -14,5 +15,36 @@
         color: @brand-primary;
         font-size: 32px;
         font-weight: 400;
+    }
+}
+
+// Footer Widgets //
+.footer-widgets {
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    .container {
+        padding-bottom: (@section-padding * 1.5);
+        padding-top: @section-padding;
+    }
+    a {
+        color: #fff;
+    }
+    .widget {
+        margin-bottom: 30px;
+        h3 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        address {
+            color: #fff;
+            font-size: 14px;
+            i {
+                color: #fff;
+            }
+        }
     }
 }

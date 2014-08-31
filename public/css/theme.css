@@ -16,6 +16,7 @@ address i {
   line-height: 40px;
   margin-right: -40px;
   position: relative;
+  top: 2px;
 }
 .bordered {
   margin-bottom: 20px;
@@ -156,6 +157,14 @@ a {
     margin-right: 5px;
     top: 0;
   }
+}
+.google-map {
+  display: block;
+  height: 150px;
+  margin-bottom: 26px;
+  position: relative;
+  top: 9px;
+  width: 100%;
 }
 header {
   background: url(../img/header-bg.png) center repeat;
@@ -361,6 +370,35 @@ header {
   color: #047f9d;
   font-size: 32px;
   font-weight: 400;
+}
+.footer-widgets {
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}
+.footer-widgets .container {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+.footer-widgets a {
+  color: #fff;
+}
+.footer-widgets .widget {
+  margin-bottom: 30px;
+}
+.footer-widgets .widget h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.footer-widgets .widget address {
+  color: #fff;
+  font-size: 14px;
+}
+.footer-widgets .widget address i {
+  color: #fff;
 }
 .upcoming-events {
   background: url(../img/upcoming-events-bg.png) center no-repeat;
