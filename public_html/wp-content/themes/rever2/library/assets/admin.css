@@ -1,0 +1,54 @@
+.field-group {
+    margin-bottom: 20px;
+}
+.field-group:last-child {
+    margin-bottom: 0;
+}
+.field-group input[type="text"],
+.field-group textarea {
+    width: 100%;
+}
+.field-group label {
+    display: block;
+}
+
+.plupload-upload-uic {
+    border: 3px dashed #ccc;
+    margin-top: 5px;
+    padding: 20px 20px 0;
+
+}
+
+.filelist {
+    width: 60%;
+}
+.filelist .file {
+    padding: 5px;
+    background: #ececec;
+    border: solid 1px #ccc;
+    margin-bottom: 4px;
+}
+.filelist .fileprogress {
+    width: 0%;
+    background: #B7C53D;
+    margin-top: 10px;
+    height: 5px;
+}
+.plupload-thumbs {
+    padding: 10px 0 20px;
+}
+.plupload-thumbs .thumb {
+    margin-right: 10px;
+    display: inline-block;
+}
+.plupload-thumbs .thumb img {
+    width: auto;
+    height: 50px;
+}
+.ui-sortable .thumb img {
+    cursor: pointer;
+}
+
+.theme-options {
+    max-width: 700px;
+}

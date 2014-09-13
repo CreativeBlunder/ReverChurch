@@ -1,0 +1,23 @@
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+@import "variables.less";
+
+.sermon {
+    margin-bottom: 0;
+    padding: 10px;
+    &:first-child {
+        margin-top: 20px;
+    }
+    &:nth-child(2n+1) {
+        background: @gray-lighter;
+    }
+    .thumbnail {
+        margin: 0;
+    }
+    .sermon-meta {
+        color: @gray-light;
+        font-size: 12px;
+        font-style: italic;
+        margin-top: -20px;
+    }
+}

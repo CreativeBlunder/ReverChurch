@@ -4,8 +4,8 @@
 
 .latest-posts {
     .container {
-        padding-bottom: (@section-padding * 1.5);
-        padding-top: 0;
+        padding-bottom: @section-padding;
+        padding-top: @section-padding;
     }
 }
 
@@ -49,6 +49,10 @@
             font-weight: 400;
             line-height: 100%;
             margin-bottom: 0;
+        }
+        @media (max-width: @screen-xs-max) {
+            display: inline-block;
+            margin-right: 10px;
         }
     }
     .comment-count {

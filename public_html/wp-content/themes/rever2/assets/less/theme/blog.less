@@ -1,0 +1,80 @@
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+@import "variables.less";
+
+.latest-posts {
+    .container {
+        padding-bottom: @section-padding;
+        padding-top: @section-padding;
+    }
+}
+
+.post {
+    margin-bottom: 40px;
+    .post-image {
+        display: block;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        a {
+            color: @gray-dark;
+        }
+    }
+    article {
+        min-height: 100px;
+        padding-left: 70px;
+    }
+    .meta {
+        float: left;
+        left: -70px;
+        margin-right: -70px;
+        position: relative;
+    }
+    .date {
+        color: mix(@gray-lighter, @gray-light, 78);
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        .day {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 100%;
+            margin-bottom: 0;
+        }
+        .month-year {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 100%;
+            margin-bottom: 0;
+        }
+        @media (max-width: @screen-xs-max) {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .comment-count {
+        background: url(../img/comments-bg.png) center no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        height: 39px;
+        line-height: 34px;
+        text-align: center;
+        width: 45px;
+    }
+}
+
+.next-prev {
+    .clearfix();
+    padding: 40px 0 20px;
+    .next {
+        float: right;
+    }
+    .prev {
+        float: left;
+    }
+}

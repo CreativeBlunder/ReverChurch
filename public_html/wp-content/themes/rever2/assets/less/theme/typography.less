@@ -1,0 +1,86 @@
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+@import "variables.less";
+
+// Addresses //
+address {
+    line-height: 20px;
+    padding-left: 40px;
+    i {
+        color: @gray-dark;
+        float: left;
+        font-size: 38px;
+        height: 40px;
+        left: -40px;
+        line-height: 40px;
+        margin-right: -40px;
+        position: relative;
+        top: 2px;
+    }
+}
+
+// Headings //
+.bordered {
+    margin-bottom: 20px;
+    .separator {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+        span {
+            background: @gray-dark;
+            display: block;
+            height: 1px;
+        }
+    }
+    .title {
+        color: @gray-dark;
+        display: table-cell;
+        font-size: 40px;
+        line-height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+}
+
+// iFrame
+iframe {
+    margin-bottom: 20px;
+}
+
+// Links //
+a {
+    .transition(background-color 0.2s ease-in);
+}
+
+// Lists //
+.list-bordered {
+    background: url(../img/dotted-border.png) left top repeat-x;
+    display: block;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 1px;
+    > li {
+        background: url(../img/dotted-border.png) left bottom repeat-x;
+        display: block;
+        padding: @line-height-computed 0 (@line-height-computed + 1px);
+    }
+    address {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-top: 5px;
+    }
+    a.arrow {
+        color: @text-color;
+        display: block;
+        .fa {
+            float: right;
+            position: relative;
+            top: 2px;
+        }
+    }
+}

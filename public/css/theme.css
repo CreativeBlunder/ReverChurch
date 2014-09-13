@@ -101,6 +101,80 @@ a {
 .icon.icon-team {
   background-position: 0 -250px;
 }
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1000;
+}
+.social-links li {
+  display: inline-block;
+  margin-left: 6px;
+}
+.social-links li a {
+  background: #bbbbbb;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
+.social-links li a:hover.facebook {
+  background: #3b5998;
+}
+.social-links li a:hover.twitter {
+  background: #55acee;
+}
+.social-links li a:hover.flickr {
+  background: #ff0084;
+}
+.social-links li a:hover.rss {
+  background: #f26522;
+}
+.social-links li a .fa {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+}
+.social-links li a .fa.fa-circle {
+  display: inline-block;
+  font-size: 8px;
+  left: -0.5px;
+  margin: 0 1px;
+  top: -2px;
+}
+.footer-widgets .social-links li {
+  margin-left: 0;
+  margin-right: 6px;
+}
+.footer-widgets .social-links li a.facebook {
+  background: #3b5998;
+}
+.footer-widgets .social-links li a.twitter {
+  background: #55acee;
+}
+.footer-widgets .social-links li a.flickr {
+  background: #ff0084;
+}
+.footer-widgets .social-links li a.rss {
+  background: #f26522;
+}
+.footer-widgets .social-links li a .fa {
+  top: -1px;
+}
+.footer-widgets .social-links li a .fa.fa-circle {
+  top: -4px;
+}
+.main-content .container {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 .schedule h4 {
   color: #333333;
   font-size: 18px;
@@ -228,53 +302,6 @@ header {
   padding-top: 5px;
   text-align: right;
 }
-.social-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 1000;
-}
-.social-links li {
-  display: inline-block;
-  margin-left: 6px;
-}
-.social-links li a {
-  background: #bbbbbb;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  width: 30px;
-}
-.social-links li a:hover.facebook {
-  background: #3b5998;
-}
-.social-links li a:hover.twitter {
-  background: #55acee;
-}
-.social-links li a:hover.flickr {
-  background: #ff0084;
-}
-.social-links li a:hover.rss {
-  background: #f26522;
-}
-.social-links li a .fa {
-  color: #fff;
-  font-size: 16px;
-  position: relative;
-  top: 1px;
-}
-.social-links li a .fa.fa-circle {
-  display: inline-block;
-  font-size: 8px;
-  margin: 0 1px;
-  top: -2px;
-}
 .jumbotron {
   border-bottom: 1px solid #ebebeb;
   margin-bottom: 0;
@@ -378,7 +405,7 @@ header {
   line-height: 30px;
 }
 .footer-widgets .container {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
 .footer-widgets a {
@@ -528,8 +555,8 @@ header {
   }
 }
 .latest-posts .container {
-  padding-bottom: 30px;
-  padding-top: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .post {
   margin-bottom: 40px;
@@ -574,6 +601,12 @@ header {
   line-height: 100%;
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .post .date {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
 .post .comment-count {
   background: url(../img/comments-bg.png) center no-repeat;
   background-size: 100% 100%;
@@ -584,4 +617,67 @@ header {
   line-height: 34px;
   text-align: center;
   width: 45px;
+}
+.newsletter-signup .form-group {
+  padding-right: 60px;
+}
+.newsletter-signup .form-group:before,
+.newsletter-signup .form-group:after {
+  content: " ";
+  display: table;
+}
+.newsletter-signup .form-group:after {
+  clear: both;
+}
+.newsletter-signup .btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: none;
+  float: right;
+  height: 40px;
+  margin-top: -40px;
+  padding: 10px;
+  position: relative;
+  right: -60px;
+  text-align: center;
+  width: 60px;
+}
+.newsletter-signup .form-control {
+  border: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  float: left;
+  font-size: 17px;
+  font-weight: 300;
+  height: 40px;
+  padding: 10px;
+}
+.footer-bottom .container {
+  line-height: 40px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+.copyright {
+  float: left;
+  line-height: 40px;
+}
+@media (max-width: 767px) {
+  .copyright {
+    float: none;
+  }
+}
+.to-top {
+  color: #cccccc;
+  float: right;
+  font-size: 47px;
+}
+.to-top:hover {
+  color: #047f9d;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .to-top {
+    float: none;
+  }
 }

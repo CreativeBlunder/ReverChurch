@@ -1,0 +1,28 @@
+.footer-bottom {
+    .container {
+        line-height: 40px;
+        padding-bottom: @section-padding;
+        padding-top: (@section-padding * 2);
+        text-align: center;
+    }
+}
+
+.copyright {
+    float: left;
+    line-height: 40px;
+    @media (max-width: @screen-xs-max) {
+        float: none;
+    }
+}
+.to-top {
+    color: mix(@gray-lighter, @gray-light, 71);
+    float: right;
+    font-size: 47px;
+    &:hover {
+        color: @brand-primary;
+        text-decoration: none;
+    }
+    @media (max-width: @screen-xs-max) {
+        float: none;
+    }
+}
